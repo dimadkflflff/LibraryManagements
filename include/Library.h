@@ -3,16 +3,17 @@
 
 #include <vector>
 #include "Book.h"
+using namespace std;
 
 class Library {
 private:
-    std::vector<Book> books;
+    vector<Book> books;
 
 public:
     void addBook(const Book& book);
-    bool removeBook(const std::string& isbn);
-    Book* findBookByTitle(const std::string& title);
-    Book* findBookByAuthor(const std::string& author);
+    bool removeBook(const string& isbn);
+    Book* findBookByTitle(const string& title);
+    Book* findBookByAuthor(const string& author);
     void displayBooks() const;
 };
 
